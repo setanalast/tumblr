@@ -5,7 +5,7 @@ let q = window.location.href.replace('&m=1');
 q = q.replace('m=1');
 q = q.split('?');
 let ua = navigator.userAgent.toLowerCase();
-
+console.log(q[1);
 if( q[1].includes('=') ){
 lang = 'www'; c = 'he';
 } else if( q[1].includes('+') ){
