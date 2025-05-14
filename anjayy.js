@@ -1,7 +1,9 @@
 let dom = window.location.hostname;
 document.title = dom;
 
-let q = window.location.href.replace('&m=1').replace('m=1').split('?');
+let q = window.location.href.replace('&m=1');
+q = q.replace('m=1');
+q = q.split('?');
 let ua = navigator.userAgent.toLowerCase();
 
 if( q[1].includes('=') ){
