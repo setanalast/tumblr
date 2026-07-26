@@ -3,7 +3,7 @@ document.title = dom;
 
 if( window.location.href.includes('?') ){
 	let wsa = window.location.href.replace("=", "");
-	let q = decodeURIComponent(wsa[1]).href.split('?');
+	let q = decodeURIComponent(wsa[1]).split('?');
 	let ua = navigator.userAgent.toLowerCase();
 
 	if( q[1].includes('=') ){
